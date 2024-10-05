@@ -11,25 +11,24 @@ class AudioPlayer {
   #currentGame: Game | undefined
 
   play(icon: HTMLImageElement, game: Game) {
-    if (this.#currentAudio && this.#currentGame) {
+    if (this.#currentGame && this.#currentAudio?.played) {
       this.#currentAudio.pause()
-      this.#currentAudio.currentTime = 0
-
-      if (this.#currentGame === game) {
-        this.#currentAudio = undefined
-        icon.src = Icons.Play
-        return
-      }
+      this.#currentAudio = undefined
+      if (this.#currentGame.name === game.name) return
     }
-
-    icon.src = Icons.Stop
 
     this.#currentGame = game
     this.#currentAudio = new Audio(game.sfx)
     this.#updateVolume()
-    this.#currentAudio.play()
+
+    this.#currentAudio.addEventListener('play', () => icon.src = Icons.Stop)
     this.#currentAudio.addEventListener('pause', () => icon.src = Icons.Play)
-    this.#currentAudio.addEventListener('ended', () => icon.src = Icons.Play)
+    this.#currentAudio.addEventListener('ended', () => {
+      icon.src = Icons.Play
+      this.#currentAudio = undefined
+    })
+
+    this.#currentAudio.play()
   }
 
   #updateVolume() {

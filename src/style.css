@@ -25,7 +25,7 @@
 }
 
 body {
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   font-family: cursive;
   background: #000 url(./assets/stars.png) repeat top center;
@@ -53,7 +53,6 @@ body {
 }
 
 .title {
-  font-size: 2rem;
   font-weight: 700;
   text-align: center;
 }
@@ -209,6 +208,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .volume-label {

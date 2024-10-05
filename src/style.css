@@ -140,6 +140,7 @@ body {
   background: inherit;
   margin: 2px;
   font-weight: bold;
+  font-family: inherit;
 }
 
 .input::placeholder {
@@ -233,6 +234,7 @@ body {
   font-weight: 600;
   cursor: pointer;
   padding: 0 8px;
+  font-family: inherit;
 }
 
 .reset-button:hover {

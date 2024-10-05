@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "prettier --write **/*.ts"
   },
   "devDependencies": {
+    "@crashmax/prettier-config": "^5.0.2",
     "typescript": "5.6.2",
     "vite": "5.4.8",
     "vite-plugin-singlefile": "2.0.2"

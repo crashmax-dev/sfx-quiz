@@ -98,12 +98,21 @@ export const GAMES: Game[] = [
   },
   {
     name: 'Counter-Strike',
-    answers: ['cs', 'кс', 'Counter Strike'],
+    answers: [
+      'cs',
+      'кс',
+      'Counter Strike'
+    ],
     sfx: id3
   },
   {
     name: 'Crash Bandicoot',
-    answers: ['Креш', 'Крэш', 'Bandicoot', 'Бандикут'],
+    answers: [
+      'Креш',
+      'Крэш',
+      'Bandicoot',
+      'Бандикут'
+    ],
     sfx: id4
   },
   {
@@ -138,7 +147,11 @@ export const GAMES: Game[] = [
   },
   {
     name: 'Half-Life',
-    answers: ['HL', 'ХЛ', 'Халф Лайф'],
+    answers: [
+      'HL',
+      'ХЛ',
+      'Халф Лайф'
+    ],
     sfx: id11
   },
   {
@@ -153,7 +166,12 @@ export const GAMES: Game[] = [
   },
   {
     name: 'Call of Duty: Warzone',
-    answers: ['Кал оф дути', 'Кол оф дути', 'Варзон', 'Warzone'],
+    answers: [
+      'Кал оф дути',
+      'Кол оф дути',
+      'Варзон',
+      'Warzone'
+    ],
     sfx: id14
   },
   {
@@ -177,7 +195,7 @@ export const GAMES: Game[] = [
     sfx: id18
   },
   {
-    name: 'ROBLOX',
+    name: 'Roblox',
     answers: ['Роблокс'],
     sfx: id19
   },
@@ -223,7 +241,11 @@ export const GAMES: Game[] = [
   },
   {
     name: `Sid Meier's Civilization 5`,
-    answers: ['Civilization', 'Цива', 'Civ'],
+    answers: [
+      'Civilization',
+      'Цива',
+      'Civ'
+    ],
     sfx: id28
   },
   {
@@ -233,12 +255,21 @@ export const GAMES: Game[] = [
   },
   {
     name: 'Team Fortress 2',
-    answers: ['TF', 'Team Fortress', 'ТФ', 'Тим Фортрес'],
+    answers: [
+      'TF',
+      'Team Fortress',
+      'ТФ',
+      'Тим Фортрес'
+    ],
     sfx: id30
   },
   {
     name: `Tom Clancy's Rainbow Six Siege`,
-    answers: ['Tom Clancy', 'Rainbow Six', 'Радуга'],
+    answers: [
+      'Tom Clancy',
+      'Rainbow Six',
+      'Радуга'
+    ],
     sfx: id31
   },
   {
@@ -278,7 +309,11 @@ export const GAMES: Game[] = [
   },
   {
     name: 'Mortal Kombat',
-    answers: ['Мортал Комбат', 'MK', 'МК'],
+    answers: [
+      'Мортал Комбат',
+      'MK',
+      'МК'
+    ],
     sfx: id38
   },
   {
@@ -298,12 +333,22 @@ export const GAMES: Game[] = [
   },
   {
     name: 'Fallout: New Vegas',
-    answers: ['Фоллаут', 'Фолаут', 'Fallout', 'New Vegas', 'Нью Вегас'],
+    answers: [
+      'Фоллаут',
+      'Фолаут',
+      'Fallout',
+      'New Vegas',
+      'Нью Вегас'
+    ],
     sfx: id42
   },
   {
     name: 'The Binding of Isaac',
-    answers: ['Binding of Isaac', 'Isaac', 'Айзек'],
+    answers: [
+      'Binding of Isaac',
+      'Isaac',
+      'Айзек'
+    ],
     sfx: id43
   },
   {
@@ -348,7 +393,11 @@ export const GAMES: Game[] = [
   },
   {
     name: 'Heroes of Might and Magic 3',
-    answers: ['Герои', 'Герои меча и магии', 'HOMM'],
+    answers: [
+      'Герои',
+      'Герои меча и магии',
+      'HOMM'
+    ],
     sfx: id52
   },
   {
@@ -393,7 +442,12 @@ export const GAMES: Game[] = [
   },
   {
     name: 'Starcraft 2',
-    answers: ['Старкрафт', 'Starcraft', 'SC', 'СК'],
+    answers: [
+      'Старкрафт',
+      'Starcraft',
+      'SC',
+      'СК'
+    ],
     sfx: id61
   },
   {
@@ -413,7 +467,11 @@ export const GAMES: Game[] = [
   },
   {
     name: 'Plants vs Zombies',
-    answers: ['Растения против Зомби', 'pvz', 'пвз'],
+    answers: [
+      'Растения против Зомби',
+      'pvz',
+      'пвз'
+    ],
     sfx: id65
   },
   {
@@ -473,7 +531,12 @@ export const GAMES: Game[] = [
   },
   {
     name: 'Silent Hill 2',
-    answers: ['Сайлент Хил', 'Silent Hill', 'SH', 'СХ'],
+    answers: [
+      'Сайлент Хил',
+      'Silent Hill',
+      'SH',
+      'СХ'
+    ],
     sfx: id77
   },
   {

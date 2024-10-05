@@ -99,7 +99,7 @@ body {
   position: relative;
 }
 
-.progress-filled {
+.progress-fill {
   height: 100%;
   background-color: var(--main-color);
   transition: all 0.5s;
@@ -216,7 +216,7 @@ body {
   flex-direction: column;
 }
 
-.volume-slider {
+.volume-range {
   accent-color: var(--main-color);
   border: 1px solid red;
 }
@@ -246,4 +246,11 @@ body {
   opacity: 0.09;
   position: absolute;
   top: 6px;
+}
+
+.time-build {
+  position: absolute;
+  font-size: 10px;
+  right: 4px;
+  bottom: 4px;
 }

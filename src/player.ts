@@ -1,12 +1,9 @@
-import { LocalStorage } from '@zero-dependency/storage'
 import { Icons } from './icons'
+import { storageVolume } from './store'
 import type { Game } from './games'
-
-const storageVolume = new LocalStorage('sfx-quiz-volume', 50)
 
 class AudioPlayer {
   #volume = storageVolume.value
-
   #currentAudio: HTMLAudioElement | undefined
   #currentGame: Game | undefined
 
@@ -21,8 +18,8 @@ class AudioPlayer {
     this.#currentAudio = new Audio(game.sfx)
     this.#updateVolume()
 
-    this.#currentAudio.addEventListener('play', () => icon.src = Icons.Stop)
-    this.#currentAudio.addEventListener('pause', () => icon.src = Icons.Play)
+    this.#currentAudio.addEventListener('play', () => (icon.src = Icons.Stop))
+    this.#currentAudio.addEventListener('pause', () => (icon.src = Icons.Play))
     this.#currentAudio.addEventListener('ended', () => {
       icon.src = Icons.Play
       this.#currentAudio = undefined

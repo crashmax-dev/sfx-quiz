@@ -5,6 +5,10 @@ import { audioPlayer } from './player'
 import { Icons } from './icons'
 import './style.css'
 
+if (!location.search) {
+  location.href = `?anti-cache=${crypto.randomUUID()}`
+}
+
 const storageQuiz = new LocalStorage<number[]>('sfx-quiz', [])
 const app = document.querySelector<HTMLElement>('#app')!
 

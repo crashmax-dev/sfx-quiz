@@ -1,5 +1,5 @@
 {
-  "name": "rudimbo-engine-template",
+  "name": "game-sfx-quiz",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,6 +14,7 @@
     "vite-plugin-singlefile": "2.0.2"
   },
   "dependencies": {
-    "@zero-dependency/dom": "1.8.4"
+    "@zero-dependency/dom": "1.8.4",
+    "@zero-dependency/storage": "1.3.4"
   }
 }

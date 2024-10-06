@@ -88,7 +88,7 @@ export interface Game {
 export const GAMES: Game[] = [
   {
     name: 'Dota 2',
-    answers: ['Дота'],
+    answers: ['Дота', 'Dota'],
     sfx: id1
   },
   {

@@ -1,4 +1,5 @@
-import { Icons } from './icons'
+import PlayIcon from './assets/play.svg'
+import StopIcon from './assets/stop.svg'
 import { storageVolume } from './store'
 import type { Game } from './games'
 
@@ -18,10 +19,10 @@ class AudioPlayer {
     this.#currentAudio = new Audio(game.sfx)
     this.#updateVolume()
 
-    this.#currentAudio.addEventListener('play', () => (icon.src = Icons.Stop))
-    this.#currentAudio.addEventListener('pause', () => (icon.src = Icons.Play))
+    this.#currentAudio.addEventListener('play', () => (icon.src = StopIcon))
+    this.#currentAudio.addEventListener('pause', () => (icon.src = PlayIcon))
     this.#currentAudio.addEventListener('ended', () => {
-      icon.src = Icons.Play
+      icon.src = PlayIcon
       this.#currentAudio = undefined
     })
 

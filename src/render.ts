@@ -1,8 +1,8 @@
 import { el } from '@zero-dependency/dom'
 
+import PlayIcon from './assets/play.svg'
 import { credits } from './credits'
 import { GAMES } from './games'
-import { Icons } from './icons'
 import { audioPlayer } from './player'
 import { storageQuiz } from './store'
 import type { Game } from './games'
@@ -21,7 +21,7 @@ export function render() {
     const gameIndex = Number(index)
     const gameItem = el('div', { className: 'grid-item' })
 
-    const buttonIcon = el('img', { src: Icons.Play })
+    const buttonIcon = el('img', { src: PlayIcon })
     const buttonPlay = el(
       'button',
       {

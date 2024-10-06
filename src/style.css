@@ -27,7 +27,7 @@
 body {
   height: 100dvh;
   overflow: hidden;
-  font-family: cursive;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', Arial, sans-serif;
   background: #000 url(./assets/stars.png) repeat top center;
   color: #fff;
 }

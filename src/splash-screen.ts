@@ -1,11 +1,23 @@
 import { el } from '@zero-dependency/dom'
 
-import freakGames from '@/assets/freak-games.mp3'
+import arina from '@/assets/arina.mp3'
+import timofey from '@/assets/timofey.mp3'
+import umka from '@/assets/umka.mp3'
+import vsevolod from '@/assets/vsevolod.mp3'
+import yuriy from '@/assets/yuriy.mp3'
+import { randomNum } from '@zero-dependency/utils'
 
 class SplashScreen {
   #el: HTMLDivElement | null = null
   #callback: (() => void) | null
   #hue = 0
+  #sounds = [
+    arina,
+    timofey,
+    umka,
+    vsevolod,
+    yuriy,
+  ]
 
   #onUpdateCursor(event: TouchEvent | MouseEvent) {
     if (!this.#el) return
@@ -87,7 +99,8 @@ class SplashScreen {
   #playAudio() {
     return new Promise<void>(async (resolve, reject) => {
       try {
-        const audio = new Audio(freakGames)
+        const sound = this.#sounds[randomNum(0, this.#sounds.length - 1)]
+        const audio = new Audio(sound)
         audio.volume = 1
         audio.addEventListener('ended', () => this.destroy())
         await audio.play()

@@ -1,10 +1,14 @@
 import { container } from './container'
 import { render } from './render'
+import { splashScreen } from './splash-screen'
 
-import './style.css'
+import './styles/main.scss'
 
-const app = document.querySelector<HTMLElement>('#app')!
-const game = render()
+splashScreen.init()
+splashScreen.onInit(() => {
+  const app = document.querySelector<HTMLElement>('#app')!
+  const game = render()
 
-container.append(...game)
-app.append(container)
+  container.append(...game)
+  app.append(container)
+})

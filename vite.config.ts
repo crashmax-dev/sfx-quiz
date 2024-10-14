@@ -1,3 +1,4 @@
+import { fileURLToPath } from 'node:url'
 import { defineConfig, Plugin } from 'vite'
 import { viteSingleFile } from 'vite-plugin-singlefile'
 
@@ -10,7 +11,12 @@ export default defineConfig({
     replaceSvgUrl()
   ],
   build: {
-    minify: false
+    minify: true
+  },
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url))
+    }
   }
 })
 

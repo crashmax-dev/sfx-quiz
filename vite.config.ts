@@ -1,5 +1,5 @@
 import { fileURLToPath } from 'node:url'
-import { defineConfig, Plugin } from 'vite'
+import { defineConfig, type Plugin } from 'vite'
 import { viteSingleFile } from 'vite-plugin-singlefile'
 
 export default defineConfig({
@@ -11,7 +11,9 @@ export default defineConfig({
     replaceSvgUrl()
   ],
   build: {
-    minify: true
+    target: 'esnext',
+    minify: false,
+    modulePreload: false
   },
   resolve: {
     alias: {

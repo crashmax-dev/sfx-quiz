@@ -1,10 +1,5 @@
 import { el } from '@zero-dependency/dom'
 
-// const buildDate = new Intl.DateTimeFormat('ru', {
-//   dateStyle: 'long',
-//   timeStyle: 'long'
-// }).format(new Date(__BUILD_DATE__))
-
 export const credits = el(
   'div',
   { className: 'credits' },
@@ -14,7 +9,7 @@ export const credits = el(
   el(
     'a',
     {
-      href: '#ищинатвич',
+      href: '#',
       className: 'link',
       title: 'Лешот'
     },
@@ -24,11 +19,10 @@ export const credits = el(
   el(
     'a',
     {
-      href: '#ищинатвич',
+      href: '#',
       className: 'link',
       title: 'Всщоде'
     },
     'VS_Code'
-  ),
-  // el('span', { className: 'time-build' }, `Сборка ${buildDate}`)
+  )
 )

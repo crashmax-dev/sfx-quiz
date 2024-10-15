@@ -1,6 +1,7 @@
 import { fileURLToPath } from 'node:url'
-import { defineConfig, type Plugin } from 'vite'
+import { defineConfig } from 'vite'
 import { viteSingleFile } from 'vite-plugin-singlefile'
+import type { Plugin } from 'vite'
 
 export default defineConfig({
   define: {

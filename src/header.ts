@@ -34,8 +34,7 @@ const resetButton = el(
 export const header = el(
   'header',
   { className: 'header' },
-  el('h1', { className: 'title' }, 'SFX Quiz'),
-  el('span', { className: 'easter-egg' }, atob('cnVEaW1ibyBmcmVhaw==')),
+  el('h1', { className: 'title' }, 'SFX Game Quiz'),
   el(
     'div',
     { className: 'controls' },

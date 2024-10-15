@@ -7,8 +7,9 @@ import './styles/main.scss'
 splashScreen.init()
 splashScreen.onInit(() => {
   const app = document.querySelector<HTMLElement>('#app')!
-  const game = render()
+  app.classList.add('background')
 
+  const game = render()
   container.append(...game)
   app.append(container)
 })

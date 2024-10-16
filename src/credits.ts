@@ -7,9 +7,8 @@ export const credits = el(
   el('span', { className: 'heart' }, '❤️'),
   'от',
   el(
-    'a',
+    'span',
     {
-      href: '#',
       className: 'link',
       title: 'Лешот'
     },
@@ -17,9 +16,8 @@ export const credits = el(
   ),
   'и',
   el(
-    'a',
+    'span',
     {
-      href: '#',
       className: 'link',
       title: 'Всщоде'
     },
